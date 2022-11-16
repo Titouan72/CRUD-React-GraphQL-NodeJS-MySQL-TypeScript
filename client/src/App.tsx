@@ -15,9 +15,9 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        <CreateUser />
-        <ListOfUsers />
-        <UpdatePassword />
+        <CreateUser /><br/>
+        <ListOfUsers /><br/>
+        <UpdatePassword /><br/>
       </ApolloProvider>
     </>
   );

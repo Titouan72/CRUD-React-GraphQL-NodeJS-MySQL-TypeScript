@@ -1,0 +1,29 @@
+//getAllUsers
+query{
+  getAllUsers {
+    username
+    password
+  }
+}
+
+//createUser
+mutation{
+  createUser(
+    name: "Titouan",
+    username: "Gouhier",
+    password: "FakePassword"
+  )
+  {
+    name
+    username
+    password
+  }
+}
+
+//update
+mutation{
+  updatePassword(username: "Gouhier", oldPassword: "FakePassword", newPassword:"FakePassword2" ){
+    successful
+    message
+  }
+}
